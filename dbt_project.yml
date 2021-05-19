@@ -1,0 +1,19 @@
+name: 'dq_cleansing'
+version: '1.0.0'
+config-version: 2
+require-dbt-version: ">=0.16.0"
+profile: 'default'
+
+# source-paths: ["models"]
+macro-paths: ["macros"]
+
+target-path: "target"  
+clean-targets: 
+    - "target"
+    - "dbt_modules"
+
+
+# models:
+#   dq_cleansing:
+#       example:
+#           materialized: view
